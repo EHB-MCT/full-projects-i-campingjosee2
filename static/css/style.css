@@ -83,6 +83,12 @@ main {
   margin-top: 20px;
 }
 
+/* /// slider-activiteiten-page-start /// */
+
+
+/* /// slider-activiteiten-page-end/// */
+
+
 main article {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -154,3 +160,20 @@ footer{
 footer img{
 height: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
