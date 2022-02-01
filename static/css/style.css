@@ -138,10 +138,7 @@ main #contact p {
   margin-top: 10px;
 }
 
-main #contact iframe {
-  box-shadow: 10px 5px 10px #adadad;
-  width: 95%;
-}
+
 
 main #contact h1:nth-child(3){
   margin-top: 30px;
@@ -155,10 +152,12 @@ footer{
   display: grid;
   grid-template-columns:40% 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
+  background-color: rgb(233, 233, 125);
 }
 
 footer img{
-height: 100px;
+height: 30px;
+
 }
 
 

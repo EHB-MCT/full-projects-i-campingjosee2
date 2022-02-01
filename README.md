@@ -11,4 +11,4 @@ js/* -> javascript directory
 
 
   [Camping-Josee]  (https://ehb-mct.github.io/full-projects-i-campingjosee2/static/)
-  #
+  
