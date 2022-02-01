@@ -146,6 +146,65 @@ main #contact h1:nth-child(3){
 }
 
 
+/*ACTIVITEITEN*/
+
+#activiteiten main{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+}
+
+
+
+#activiteiten main article{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+  margin-left: 20px;
+}
+
+#activiteiten main div{
+  grid-column: 1/4;
+  text-align: center;
+}
+
+#activiteiten main article section{
+  width: 100%;
+}
+
+#activiteiten main article img{
+  width: 100%;
+}
+
+#activiteiten main article h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #6B9AC4;
+}
+
+#activiteiten main article h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+  background-color: #F4AC45;
+  box-shadow: 5px 5px 10px #cfcfcf;
+  padding: 10px;
+}
+
+#activiteiten main article p{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+}
+
+#activiteiten main article a{
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #6B9AC4;
+  font-weight: bolder;
+}
+
 
 
 
