@@ -52,6 +52,13 @@
         padding: 95px;
     }
 
+    main #contact{
+        grid-template-columns: 1fr;
+    }
+
+    main #contact iframe{
+        z-index: -10;
+    }
     
 
 
