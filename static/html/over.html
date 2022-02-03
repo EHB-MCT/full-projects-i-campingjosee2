@@ -55,8 +55,105 @@
     </ul>
   </nav>
 
+  <div class="slideshow-container">
 
 
+
+    <div class="mySlides fade">
+      <img src="../img/imagecaroussel4.png " style="width:100% ">
+      <div class="text">Over Ons</div>
+    </div>
+
+
+
+    <div class="mySlides fade">
+      <img src="../img/image decoupé.png" style="width:100%">
+      <div class="text">Over Ons</div>
+    </div>
+
+
+
+    <div class="mySlides fade">
+      <img src="../img/imagecaroussel3.png" style="width:100%">
+      <div class="text">Over Ons</div>
+    </div>
+
+
+
+  </div>
+  <br>
+
+
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000);
+    }
+  </script>
+
+  <br>
+  <br>
+  <br>
+  <main>
+    <article>
+      <section>
+        <h1>Samen zijn we sterker !</h1>
+        <p>Verder voeren we het principe van co-productie en mede-eigenaarsschap hoog in het vaandel. Ten Noey niet de
+          eigendom is van team Ten Noey, noch van de Raad van bestuur.
+
+          Ten Noey is van de hele lokale gemeenschap en kan dus door die gemeenschap ingeschakeld worden om in te spelen
+          op noden en behoeften. Maar dan rekenen we ook op inzet en samenwerking vanuit die omgeving.
+          Zelden zet Ten Noey iets volledig op eigen houtje op het programma. Bijna altijd is het in samenwerking.
+        </p>
+      </section>
+      <section>
+        <h1>Ontmoeting de prioriteit</h1>
+        <p>Het vertrekpunt is ontmoeting.
+
+          Geen sociaal-cultureel werk zonder ontmoeting tussen minstens twee mensen.
+
+          En die neemt vele vormen aan: van dag zeggen op straat tegen iedereen die we tegenkomen (ontmoeten) tot
+          huisbezoeken bij mensen die we al een tijdje niet meer hoorden of zagen. En natuurlijk zijn er ook de
+          feestjes, recepties,...
+          Een tweede belangrijke lijn is: werken met en voor Nederlandslustigen.</p>
+      </section>
+    </article>
+  </main>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <main>
 
   </main>
