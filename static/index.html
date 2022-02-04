@@ -24,6 +24,9 @@
       <img src="./img/logo.png" alt="logo makelaarskantoor">
     </a>
 
+
+
+
     <ul class="active" id="entiteit">
 
       <li>
@@ -60,7 +63,7 @@
 
 
   <main>
-    <article>
+    <article class="article-home">
       <section>
         <h1>12-18 juni 2022 Park van Sint-Joost</h1>
         <p>Josée heeft het zo naar haar zin in Sint-Joost dat ze nu ook een winterversie van haar camping opent: Cantine
@@ -79,33 +82,104 @@
 
     <section id="contact">
 
-      <div>
 
-        <img src="./img/camping-josee2.png" alt=" camping-josee2-img" width="95%">
-
+      <div class="gegevens">
 
 
+        <h1 class="titel-kalender">Overzicht Evenementen</h1>
 
-      </div>
-      <div>
-        
-        
-        <h1>Doe Mee</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam aliquid, recusandae iste animi doloremque
-          sequi praesentium libero iure harum ducimus aperiam voluptatem pariatur eligendi ipsam necessitatibus
-          provident dolorem corporis expedita!</p>
 
 
 
       </div>
 
+
+
+      <div class="calendar">
+
+        <div class="col leftCol">
+          <div class="content">
+            <h1 class="date">Friday<span>January 4th</span></h1>
+            <div class="notes">
+              <p>
+                <input type="text" value="" placeholder="Add note" />
+                <a href="#" title="Add note" class="addNote animate">+</a>
+              </p>
+              <ul class="noteList">
+                <li>Delet event<a href="#" title="Remove note" class="removeNote animate">x</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col rightCol">
+          <div class="content">
+            <h2 class="year">2022</h2>
+            <ul class="months">
+              <li><a href="#" title="Jan" data-value="1">Jan</a></li>
+              <li><a href="#" title="Feb" data-value="2" class="selected">Feb</a></li>
+              <li><a href="#" title="Mar" data-value="3">Mar</a></li>
+              <li><a href="#" title="Apr" data-value="4">Apr</a></li>
+              <li><a href="#" title="May" data-value="5">May</a></li>
+              <li><a href="#" title="Jun" data-value="6">Jun</a></li>
+              <li><a href="#" title="Jul" data-value="7">Jul</a></li>
+              <li><a href="#" title="Aug" data-value="8">Aug</a></li>
+              <li><a href="#" title="Sep" data-value="9">Sep</a></li>
+              <li><a href="#" title="Oct" data-value="10">Oct</a></li>
+              <li><a href="#" title="Nov" data-value="11">Nov</a></li>
+              <li><a href="#" title="Dec" data-value="12">Dec</a></li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="weekday">
+              <li><a href="#" title="Mon" data-value="1">Mon</a></li>
+              <li><a href="#" title="Tue" data-value="2">Tue</a></li>
+              <li><a href="#" title="Wed" data-value="3">Wed</a></li>
+              <li><a href="#" title="Thu" data-value="4">Thu</a></li>
+              <li><a href="#" title="Fri" data-value="5">Fri</a></li>
+              <li><a href="#" title="Say" data-value="6">Sat</a></li>
+              <li><a href="#" title="Sun" data-value="7">Sun</a></li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="days">
+              <script>
+                for (var _i = 1; _i <= 28; _i += 1) {
+                  var _addClass = '';
+                  if (_i === 4) {
+                    _addClass = ' class="selected"';
+                  }
+
+                  switch (_i) {
+                    case 8:
+                    case 10:
+                    case 27:
+                      _addClass = ' class="event"';
+                      break;
+                  }
+
+                  document.write('<li><a href="#" title="' + _i + '" data-value="' + _i + '"' +
+                    _addClass + '>' + _i + '</a></li>');
+                }
+              </script>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+     
     </section>
 
   </main>
 
   <section>
 
-    
+
 
 
 
@@ -119,24 +193,68 @@
 
 
 
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Bekijk ook</h4>
+          <ul>
+            <li><a href="https://www.vgc.be/" target="_blank">Vlaamse Gemeenschapscommissie</a></li>
+            <li><a href="https://www.n22.brussels/" target="_blank">De 22 Brusselse gemeenschapscentra</a></li>
+            <li><a href="https://sint-joost-ten-node.bibliotheek.be/" target="_blank">Bib Joske</a></li>
+            <li><a href="https://www.sintjoostaanzee.be/" target="_blank">Gemeenteschool Sint-Joost-aan-zee</a></li>
+            <li><a href="https://www.huisnederlandsbrussel.be/" target="_blank">Huis van het Nederlands</a></li>
+            <li><a href="https://www.jcaximax.be/" target="_blank">Jeugdcentrum Aximax</a></li>
+            <li><a href="https://www.uitinbrussel.be/paspartoe" target="_blank">Paspartoe</a></li>
+            <li><a href="https://www.tennude.be/" target="_blank">Ten Nude Basisschool</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Snel naar</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html/activiteiten.html">Activiteiten</a></li>
+            <li><a href="html/over.html">Over ons</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+            <li><a href="https://gpatsis.wixsite.com/cantinejosee">cantinejosee</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Volg ons</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/gctennoey" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gctennoey/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+  <div class="footer-image">
+          <ul>
+            <li><img src="img/logo-st-joost.png" class="image1"></li>
+            <li><img src="img/logo-ten-noey.png" class="image2"></li>
+            <li><img src="img/logo-n.png" class="image3"></li>
+            <li><img src="img/logo-bib-joske.png" class="image4"></li>
+            <li><img src="img/logo-bredeschool.png" class="image5"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <html lang="en-US">
+<body>
 
 
 
-
-
-
-
-
-
-  <footer>
-    <div></div>
-    <img src="./img/logo-st-joost.png">
-    <img src="./img/logo-ten-noey.png">
-    <img src="./img/logo-n.png">
-    <img src="./img/logo-bib-joske.png">
-    <img src="./img/logo-bredeschool.png">
-
-  </footer>
+</body>
+</html>
+ </footer>
 
 </body>
 
