@@ -92,7 +92,7 @@ main {
 
 main article {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns:  1fr 1fr;
   grid-gap: 30px;
 }
 
@@ -323,6 +323,8 @@ main #contact h1:nth-child(3){
 
 /* calendar start */
 
+/* calendar start */
+
 
 
 
@@ -358,6 +360,8 @@ a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+
 /* required */
 .calendar {
   border-radius: 4px;
@@ -405,17 +409,8 @@ a {
 
 .calendar .leftCol {
   width: 40%;
-  background-color: white;
+  background-color: #6B9AC4;
 }
-
-.titel-kalender{
-  width: 40%;
-  color: #6B9AC4;
-}
-
-
-
-
 
 .calendar .noteList li {
   color: #ffffff;
@@ -536,7 +531,8 @@ a {
   color: #6B9AC4;
 }
 
-/*placeholder color */
+
+/* placeholder color */
 ::-webkit-input-placeholder {
   color: #ffffff;
 }
@@ -556,13 +552,6 @@ a {
 
 
 
-
-
-
-
-
-
-/* calendar end  */
 
 main #contact {
   display: grid;
@@ -676,7 +665,7 @@ img {
 
 main #contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 50px;
 }
 
